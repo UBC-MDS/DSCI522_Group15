@@ -7,8 +7,19 @@
     <title>Data Analysis Final Report</title>
 </head>
 <body>
-    <!-- Include your HTML content here -->
-    <!-- For example, you might want to include an iframe to embed the external HTML file -->
-    <iframe src="https://raw.githubusercontent.com/UBC-MDS/Student_Success_Predict_Group15/main/src/data_analysis_final_report.html" width="100%" height="600px"></iframe>
+
+<!-- Include your HTML content here -->
+<!-- For example, link directly to the HTML file using GitHub raw content URL -->
+<!-- Replace 'main' with the branch name if different -->
+<script>
+  const url = 'https://raw.githubusercontent.com/UBC-MDS/Student_Success_Predict_Group15/main/src/data_analysis_final_report.html';
+  fetch(url)
+    .then(response => response.text())
+    .then(html => {
+      document.body.innerHTML = html;
+    });
+</script>
+
 </body>
 </html>
+
