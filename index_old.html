@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Final Report</title>
+</head>
+<body>
+
+<!-- Include your HTML content here -->
+<!-- For example, link directly to the HTML file using GitHub raw content URL -->
+<!-- Replace 'main' with the branch name if different -->
+<script>
+  const url = 'https://raw.githubusercontent.com/UBC-MDS/Student_Success_Predict_Group15/main/report/_build/_page/student_success/html/student_success.html';    
+  fetch(url)
+    .then(response => response.text())
+    .then(html => {
+      document.body.innerHTML = html;
+    });
+</script>
+
+</body>
+</html>
+
