@@ -18,7 +18,7 @@ In the src directory, you will find four Jupyter notebooks: data_analysis_final_
 
 ## 📄 Report
 
-We have compiled our analysis into a comprehensive report, which can be accessed [through this link](https://ubc-mds.github.io/Student_Success_Predict_Group15/src/data_analysis_final_report.html). Our report includes several charts and visualizations that effectively aid in understanding the data patterns and analytical results. We welcome any feedback and suggestions you may have.
+We have compiled our analysis into a comprehensive report, which can be accessed [through this link](https://ubc-mds.github.io/Student_Success_Predict_Group15/student_success.html). Our report includes several charts and visualizations that effectively aid in understanding the data patterns and analytical results. We welcome any feedback and suggestions you may have.
 
 ## 📦 Dependencies
 
