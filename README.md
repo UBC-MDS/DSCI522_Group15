@@ -27,7 +27,7 @@ We have compiled our analysis into a comprehensive report, which can be accessed
 Docker is a container solution used to manage the software dependencies for this project. The Docker image used for this project is based on the quay.io/jupyter/minimal-notebook:2023-11-19 image. Additioanal dependencies are specified int the Dockerfile.
 
 ## 💻 Usage
-##### Working with the project in the container with Jupyter lab
+### Working with the project in the container with Jupyter lab
 
 Setup:
 1. Install and launch Docker on your computer.
@@ -59,7 +59,7 @@ Clean up:
    docker compose rm
    ```
 
-##### To add a new dependency, follow the steps below:
+### To add a new dependency, follow the steps below:
 
 1. Add the dependency to the Dockerfile file on a new branch.
 2. Re-build the Docker image locally to ensure it builds and runs properly.
