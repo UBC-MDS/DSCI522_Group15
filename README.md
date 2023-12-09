@@ -29,18 +29,25 @@ Docker is a container solution used to manage the software dependencies for this
 ## 💻 Usage
 ##### Working with the project in the container with Jupyter lab
 
-1. Navigate to the root of this project on your computer using the command line and run
+Setup:
+1. Install and launch Docker on your computer.
+2. Clone this GitHub repository.
+   ```
+   git clone git@github.com:UBC-MDS/Student_Success_Predict_Group15.git
+   ```
+3. Navigate to the root of this project on your computer using the command line and run
    ```
    docker compose up
    ```
-2. In the terminal, look for a URL that starts with http://127.0.0.1:8888/lab?token=. Copy and paste that URL into your browser to run jupyter lab.
-3. Running the analysis
-- Open up a terminal in the Jupyter IDE of the Docker container, and use the terminal in the project root to navigate to the work directory using the command: cd ./work
-- To reset the project to a clean state (i.e., remove all files if you have run this analysis before):
+4. In the terminal, look for a URL that starts with http://127.0.0.1:8888/lab?token=. Copy and paste that URL into your browser to run jupyter lab.
+
+Running the analysis:
+1. Open up a terminal in the Jupyter IDE of the Docker container, and use the terminal in the project root to navigate to the work directory using the command: cd ./work
+2. To reset the project to a clean state (i.e., remove all files if you have run this analysis before):
    ```
    make clean
    ```
-- To run the analysis in its entirety, enter the following command in the terminal in the project root:
+3. To run the analysis in its entirety, enter the following command in the terminal in the project root:
    ```
    make all
    ```
