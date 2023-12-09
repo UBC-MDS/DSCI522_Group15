@@ -350,18 +350,18 @@ document.write(`
 </section>
 <section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p>In the realm of educational analytics, understanding the factors that influence student performance is pivotal for shaping effective pedagogical strategies. Our project delves into this domain, leveraging the rich and multifaceted Student Performance Data Set from the UCI Machine Learning Repository <span id="id1">[<a class="reference internal" href="#id8" title="Paulo Cortez. Student Performance. UCI Machine Learning Repository, 2014. DOI: https://doi.org/10.24432/C5TG7T. URL: https://archive.ics.uci.edu/dataset/320/student+performance.">Cortez, 2014</a>]</span>. This dataset, derived from two Portuguese secondary schools, offers a comprehensive view of various personal, social, and academic factors impacting student achievement in Mathematics and Portuguese language courses.</p>
-<p>Machine learning methodologies have been extensively used in educational data mining to detect patterns in large collections of educational data <span id="id2">[<a class="reference internal" href="#id7" title="Cristobal Romero and Sebastian Ventura. Educational data mining: a review of the state of the art. 2015. URL: https://www.researchgate.net/publication/220374213_Educational_Data_Mining_A_Review_of_the_State_of_the_Art.">Romero and Ventura, 2015</a>]</span>. Our objective is to utilize machine learning techniques to analyze and predict student academic outcomes, focusing primarily on identifying key predictors of success and risk factors for academic dropout. Through this analysis, we aim to uncover insights that can guide interventions and support mechanisms to enhance student performance. The dataset’s inclusivity of attributes ranging from demographic backgrounds and family information to study habits and lifestyle choices provides a unique opportunity to explore the multifaceted nature of academic success.</p>
+<p>In the realm of educational analytics, understanding the factors that influence student performance is pivotal for shaping effective pedagogical strategies. Our project delves into this domain, leveraging the rich and multifaceted Student Performance Data Set from the UCI Machine Learning Repository <span id="id1">[<a class="reference internal" href="#id7" title="Paulo Cortez. Student Performance. UCI Machine Learning Repository, 2014. DOI: https://doi.org/10.24432/C5TG7T. URL: https://archive.ics.uci.edu/dataset/320/student+performance.">Cortez, 2014</a>]</span>. This dataset, derived from two Portuguese secondary schools, offers a comprehensive view of various personal, social, and academic factors impacting student achievement in Mathematics and Portuguese language courses.</p>
+<p>Machine learning methodologies have been extensively used in educational data mining to detect patterns in large collections of educational data <span id="id2">[<a class="reference internal" href="#id6" title="Cristobal Romero and Sebastian Ventura. Educational data mining: a review of the state of the art. 2015. URL: https://www.researchgate.net/publication/220374213_Educational_Data_Mining_A_Review_of_the_State_of_the_Art.">Romero and Ventura, 2015</a>]</span>. Our objective is to utilize machine learning techniques to analyze and predict student academic outcomes, focusing primarily on identifying key predictors of success and risk factors for academic dropout. Through this analysis, we aim to uncover insights that can guide interventions and support mechanisms to enhance student performance. The dataset’s inclusivity of attributes ranging from demographic backgrounds and family information to study habits and lifestyle choices provides a unique opportunity to explore the multifaceted nature of academic success.</p>
 </section>
 <section id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h2>
 <section id="data">
 <h3>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h3>
-<p>The data set used in this project is of student performance in secondary education (high school) of two Portuguese schools <span id="id3">[<a class="reference internal" href="#id8" title="Paulo Cortez. Student Performance. UCI Machine Learning Repository, 2014. DOI: https://doi.org/10.24432/C5TG7T. URL: https://archive.ics.uci.edu/dataset/320/student+performance.">Cortez, 2014</a>]</span>. The data attributes include student grades, demographic, social and school related features, and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics and Portuguese language. The data set was sourced from the UCI Machine Learning Repository and can be found <span id="id4">[<a class="reference internal" href="#id8" title="Paulo Cortez. Student Performance. UCI Machine Learning Repository, 2014. DOI: https://doi.org/10.24432/C5TG7T. URL: https://archive.ics.uci.edu/dataset/320/student+performance.">Cortez, 2014</a>]</span> attached URL. Each row in the data set represents a student’s profile and academic outcomes, including the final grade (G3) and several other variables (e.g., school, sex, age, study time, absences, etc.).</p>
+<p>The data set used in this project is of student performance in secondary education (high school) of two Portuguese schools <span id="id3">[<a class="reference internal" href="#id7" title="Paulo Cortez. Student Performance. UCI Machine Learning Repository, 2014. DOI: https://doi.org/10.24432/C5TG7T. URL: https://archive.ics.uci.edu/dataset/320/student+performance.">Cortez, 2014</a>]</span>. The data attributes include student grades, demographic, social and school related features, and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics and Portuguese language. The data set was sourced from the UCI Machine Learning Repository and can be found <a class="reference external" href="https://archive.ics.uci.edu/dataset/320/student+performance">here</a>. Each row in the data set represents a student’s profile and academic outcomes, including the final grade (G3) and several other variables (e.g., school, sex, age, study time, absences, etc.).</p>
 </section>
 <section id="analysis">
 <h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h3>
-<p>The method we use include Random Forest, Logistic Regression, and SVM. In the landscape of machine learning, three algorithms stand out for their efficacy and versatility: Logistic Regression, Random Forest, and Support Vector Machine (SVM). We have employed the method of feature importance values and Principal Component Analysis (PCA) to streamline the dimensionality of our feature space. Data was split with 80% being partitioned into the training set and 20% being partitioned into the test set. The hyperparameter <span class="math notranslate nohighlight">\(K\)</span> was chosen using 10-fold cross validation with the test score as the classification metric.  All numerical variables were standardized and categorical features were preprocessed by one-hot encoding just prior to model fitting. The Python programming language <span id="id5">[<a class="reference internal" href="#id9" title="Guido Van Rossum and Fred L. Drake. Python 3 Reference Manual. CreateSpace, Scotts Valley, CA, 2009. ISBN 1441412697.">Van Rossum and Drake, 2009</a>]</span>.  code used to perform the analysis and create this report can be found <a class="reference external" href="https://github.com/UBC-MDS/Student_Success_Predict_Group15">here</a>.</p>
+<p>The method we use include Random Forest, Logistic Regression, and SVM. In the landscape of machine learning, three algorithms stand out for their efficacy and versatility: Logistic Regression, Random Forest, and Support Vector Machine (SVM). We have employed the method of feature importance values and Principal Component Analysis (PCA) to streamline the dimensionality of our feature space. Data was split with 80% being partitioned into the training set and 20% being partitioned into the test set. The hyperparameter <span class="math notranslate nohighlight">\(K\)</span> was chosen using 10-fold cross validation with the test score as the classification metric.  All numerical variables were standardized and categorical features were preprocessed by one-hot encoding just prior to model fitting. The Python programming language <span id="id4">[<a class="reference internal" href="#id8" title="Guido Van Rossum and Fred L. Drake. Python 3 Reference Manual. CreateSpace, Scotts Valley, CA, 2009. ISBN 1441412697.">Van Rossum and Drake, 2009</a>]</span>.  code used to perform the analysis and create this report can be found <a class="reference external" href="https://github.com/UBC-MDS/Student_Success_Predict_Group15">here</a>.</p>
 </section>
 </section>
 <section id="results-discussion">
@@ -408,23 +408,206 @@ The second semester grade emerges as a significant indicator of student academic
 </figcaption>
 </figure>
 <p>The final models demonstrated commendable performance, marked by a minimal discrepancy between training and testing results. This consistency is indicative of the models’ ability to generalize well to unseen data, a crucial aspect of robust machine learning models.</p>
+<figure class="align-default" id="model-training-scores">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>RandomForest</th>
+      <th>Logistic Regression</th>
+      <th>SVC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>fit_time</td>
+      <td>0.201609</td>
+      <td>0.075037</td>
+      <td>1.279907</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>score_time</td>
+      <td>0.030778</td>
+      <td>0.019465</td>
+      <td>0.203314</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>test_accuracy</td>
+      <td>0.757279</td>
+      <td>0.764905</td>
+      <td>0.757561</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>train_accuracy</td>
+      <td>0.843599</td>
+      <td>0.782283</td>
+      <td>0.787652</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>test_precision</td>
+      <td>0.737193</td>
+      <td>0.745870</td>
+      <td>0.743182</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>train_precision</td>
+      <td>0.850690</td>
+      <td>0.768551</td>
+      <td>0.779404</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>test_recall</td>
+      <td>0.757279</td>
+      <td>0.764905</td>
+      <td>0.757561</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>train_recall</td>
+      <td>0.843599</td>
+      <td>0.782283</td>
+      <td>0.787652</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>test_f1</td>
+      <td>0.731526</td>
+      <td>0.744275</td>
+      <td>0.739644</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>train_f1</td>
+      <td>0.832972</td>
+      <td>0.764501</td>
+      <td>0.771922</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>test_roc_auc</td>
+      <td>0.877215</td>
+      <td>0.869558</td>
+      <td>0.877458</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>train_roc_auc</td>
+      <td>0.961276</td>
+      <td>0.892067</td>
+      <td>0.907815</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Training scores for the three models: Logistic Regression, Random Forest, and Support Vector Machine.</span><a class="headerlink" href="#model-training-scores" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Among the three algorithms employed - Logistic Regression, Random Forest, and Support Vector Machine (SVM) - the performance metrics were closely aligned, suggesting that each model was able to capture the underlying patterns in the data effectively.</p>
+<figure class="align-default" id="model-test-scores">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>RandomForest</th>
+      <th>LogisticRegression</th>
+      <th>SVC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>accuracy</td>
+      <td>0.778531</td>
+      <td>0.783051</td>
+      <td>0.796610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>precision</td>
+      <td>0.757904</td>
+      <td>0.766489</td>
+      <td>0.787877</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>recall</td>
+      <td>0.778531</td>
+      <td>0.783051</td>
+      <td>0.796610</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>f1</td>
+      <td>0.751311</td>
+      <td>0.764394</td>
+      <td>0.779679</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>roc_auc</td>
+      <td>0.895952</td>
+      <td>0.894758</td>
+      <td>0.891939</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Test scores for the three models: Logistic Regression, Random Forest, and Support Vector Machine.</span><a class="headerlink" href="#model-test-scores" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>However, there remains room for improvement in the models’ performance. Further refinement through advanced feature engineering could yield more significant insights from the data, potentially enhancing the models’ predictive accuracy. Feature engineering, by uncovering more relevant or representative features, can lead to a more nuanced understanding of the factors influencing student academic dropout. Moreover, meticulous parameter tuning, particularly for algorithms like SVM and Random Forest that are sensitive to specific parameter settings, could further optimize the models.</p>
 </section>
 <section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
-<div class="docutils container" id="id6">
-<div class="citation" id="id8" role="doc-biblioentry">
+<div class="docutils container" id="id5">
+<div class="citation" id="id7" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>Cor14<span class="fn-bracket">]</span></span>
-<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id3">2</a>,<a role="doc-backlink" href="#id4">3</a>)</span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id3">2</a>)</span>
 <p>Paulo Cortez. Student Performance. UCI Machine Learning Repository, 2014. DOI: https://doi.org/10.24432/C5TG7T. URL: <a class="reference external" href="https://archive.ics.uci.edu/dataset/320/student+performance">https://archive.ics.uci.edu/dataset/320/student+performance</a>.</p>
 </div>
-<div class="citation" id="id7" role="doc-biblioentry">
+<div class="citation" id="id6" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">RV15</a><span class="fn-bracket">]</span></span>
 <p>Cristobal Romero and Sebastian Ventura. Educational data mining: a review of the state of the art. 2015. URL: <a class="reference external" href="https://www.researchgate.net/publication/220374213_Educational_Data_Mining_A_Review_of_the_State_of_the_Art">https://www.researchgate.net/publication/220374213_Educational_Data_Mining_A_Review_of_the_State_of_the_Art</a>.</p>
 </div>
-<div class="citation" id="id9" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">VRD09</a><span class="fn-bracket">]</span></span>
+<div class="citation" id="id8" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">VRD09</a><span class="fn-bracket">]</span></span>
 <p>Guido Van Rossum and Fred L. Drake. <em>Python 3 Reference Manual</em>. CreateSpace, Scotts Valley, CA, 2009. ISBN 1441412697.</p>
 </div>
 </div>
@@ -441,16 +624,16 @@ The second semester grade emerges as a significant indicator of student academic
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "r"
+            mode: "python"
         },
         kernelOptions: {
-            name: "ir",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'ir'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
