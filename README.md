@@ -27,20 +27,6 @@ We have compiled our analysis into a comprehensive report, which can be accessed
 Docker is a container solution used to manage the software dependencies for this project. The Docker image used for this project is based on the quay.io/jupyter/minimal-notebook:2023-11-19 image. Additioanal dependencies are specified int the Dockerfile.
 
 ## 💻 Usage
-
-Running the analysis
-Navigate to the root of this project on your computer using the command line and enter the following command to reset the project to a clean state (i.e., remove all files if you have run this analysis before):
-```
-docker-compose run --rm analysis-env make clean
-```
-
-To run the analysis in its entirety, enter the following command in the terminal in the project root:
-```
-docker-compose run --rm analysis-env make all
-```
-
-### Developer notes
-
 ##### Working with the project in the container with Jupyter lab
 
 1. Navigate to the root of this project on your computer using the command line and run
@@ -48,14 +34,23 @@ docker-compose run --rm analysis-env make all
    docker compose up
    ```
 2. In the terminal, look for a URL that starts with http://127.0.0.1:8888/lab?token=. Copy and paste that URL into your browser to run jupyter lab.
-3. To run the analysis, open data_analysis_final_report.ipynb in Jupyter Lab you just launched and under the "Kernel" menu click "Restart Kernel and Run All Cells...".
+3. Running the analysis
+- Open up a terminal in the Jupyter IDE of the Docker container, and use the terminal in the project root to navigate to the work directory using the command: cd ./work
+- To reset the project to a clean state (i.e., remove all files if you have run this analysis before):
+   ```
+   make clean
+   ```
+- To run the analysis in its entirety, enter the following command in the terminal in the project root:
+   ```
+   make all
+   ```
 
-Clean up
+Clean up:
 1. Type Contrl + C in the terminal where you launched the container to shut down the container and clean up the resources
 2. run
-```
-docker compose rm
-```
+   ```
+   docker compose rm
+   ```
 
 ##### To add a new dependency, follow the steps below:
 
